@@ -13,7 +13,7 @@ import (
 )
 TOKEN = "5221050210:AAH3VQzKmGG1uylSaYZgJjKAH1GUkaneayA"
 func main() {
-	b, err := gotgbot.NewBot(os.Getenv("TOKEN"), &gotgbot.BotOpts{
+	b, err := gotgbot.NewBot(("5221050210:AAH3VQzKmGG1uylSaYZgJjKAH1GUkaneayA"), &gotgbot.BotOpts{
 		Client:      http.Client{},
 		GetTimeout:  gotgbot.DefaultGetTimeout,
 		PostTimeout: gotgbot.DefaultPostTimeout,
