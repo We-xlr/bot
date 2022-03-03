@@ -11,7 +11,7 @@ import (
 	"github.com/PaulSonOfLars/gotgbot/v2/ext"
 	"github.com/PaulSonOfLars/gotgbot/v2/ext/handlers"
 )
-
+TOKEN = "5221050210:AAH3VQzKmGG1uylSaYZgJjKAH1GUkaneayA"
 func main() {
 	b, err := gotgbot.NewBot(os.Getenv("TOKEN"), &gotgbot.BotOpts{
 		Client:      http.Client{},
