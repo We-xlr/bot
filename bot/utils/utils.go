@@ -10,7 +10,7 @@ import (
 )
 
 func Check(user int) (*types.CheckResponse, error) {
-	var url string = "https://sylviorus-api.up.railway.app/user"
+	var url string = "https://gban-api.up.railway.app/user"
 	res, err := http.Get(fmt.Sprintf("%v/%v", url, user))
 	if err != nil {
 		return nil, err
@@ -23,7 +23,7 @@ func Check(user int) (*types.CheckResponse, error) {
 }
 
 func Ban(user, enforcer int, reason, admin_token string) {
-	var url string = "https://sylviorus-api.up.railway.app/ban"
+	var url string = "https://gban-api.up.railway.app/ban"
 
 	jsom := map[string]string{
 		"user":        string(user),
@@ -46,7 +46,7 @@ func Ban(user, enforcer int, reason, admin_token string) {
 
 func Unban(user int) {
 
-	var url string = "https://sylviorus-api.up.railway.app/unban"
+	var url string = "https://gban-api.up.railway.app/unban"
 	str := fmt.Sprintf(`{"user" : %v}`, user)
 	jsom := []byte(str)
 
